@@ -9,9 +9,6 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {
-        "nette/nette": "@dev"
-    },
     "require-dev": {
         "nette/tester": "@dev"
     }
