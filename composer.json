@@ -1,5 +1,5 @@
 {
-    "name": "venca-x/dateCZ",
+    "name": "venca-x/date-cz",
     "require": {
         "php": " >= 5.3.0"
     }
