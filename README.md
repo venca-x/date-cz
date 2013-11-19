@@ -10,6 +10,7 @@ protected function createTemplate( $class = NULL )
     $template = parent::createTemplate( $class );
     $template->registerHelper( 'monthNameCZ', callback( new \DateCZ(), 'getMonthName' ) );
     $template->registerHelper( 'dayNameCZ', callback( new \DateCZ(), 'getDayName' ) );
+    $template->registerHelper( 'dayNameShortCZ', callback( new \DateCZ(), 'getShortDayName' ) );
     return $template;
 }
 
@@ -22,5 +23,7 @@ Usage
 {$dateTime->date|date:'n'|monthNameCZ} (* month name*)
 
 {$dateTime->date|date:'N'|dayNameCZ} (* day name*)
+
+{$dateTime->date|date:'N'|dayNameShortCZ} (* short day name*)
 
 ```

@@ -12,6 +12,8 @@ class DateCZ
     protected $months = array( 1 => 'leden', 'únor', 'březen', 'duben', 'květen', 'červen', 'červenec', 'srpen', 'září', 'říjen', 'listopad', 'prosinec' );
     //definition name of days
     protected $days = array( 1 => 'pondělí', 'úterý', 'středa', 'čtvrtek', 'pátek', 'sobota', 'neděle' );
+    //definition name of short days
+    protected $shortDays = array( 1 => 'po', 'út', 'st', 'čt', 'pá', 'so', 'ne' );    
 
     /**
      * Transfer numbers month to month name
@@ -32,6 +34,16 @@ class DateCZ
     {
         return $this->getValueArray( $numberDay, $this->days );
     }
+    
+    /**
+     * Transfer numbers day to short day name
+     * @param integer $numberDay
+     * @return string Short name of day
+     */
+    public function getShortDayName( $numberDay = NULL )
+    {
+        return $this->getValueArray( $numberDay, $this->shortDays );
+    }    
 
     /**
      * Search index in array

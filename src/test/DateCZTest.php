@@ -77,6 +77,23 @@ class DateCZTest extends PHPUnit_Framework_TestCase
         $this->assertEquals( NULL, $this->dateCZ->getDayName( "" ) );
         $this->assertEquals( NULL, $this->dateCZ->getDayName( "asdf" ) );
         $this->assertEquals( NULL, $this->dateCZ->getDayName( NULL ) );
+        
+        //short days
+        $this->assertEquals( 'po', $this->dateCZ->getShortDayName( 1 ) );
+        $this->assertEquals( 'út', $this->dateCZ->getShortDayName( 2 ) );
+        $this->assertEquals( 'st', $this->dateCZ->getShortDayName( 3 ) );
+        $this->assertEquals( 'čt', $this->dateCZ->getShortDayName( 4 ) );
+        $this->assertEquals( 'pá', $this->dateCZ->getShortDayName( 5 ) );
+        $this->assertEquals( 'so', $this->dateCZ->getShortDayName( 6 ) );
+        $this->assertEquals( 'ne', $this->dateCZ->getShortDayName( 7 ) );
+        
+        //short days - wrong values
+        $this->assertEquals( NULL, $this->dateCZ->getShortDayName( 0 ) );
+        $this->assertEquals( NULL, $this->dateCZ->getShortDayName( 8 ) );
+        $this->assertEquals( NULL, $this->dateCZ->getShortDayName(  ) );
+        $this->assertEquals( NULL, $this->dateCZ->getShortDayName( "" ) );
+        $this->assertEquals( NULL, $this->dateCZ->getShortDayName( "asdf" ) );
+        $this->assertEquals( NULL, $this->dateCZ->getShortDayName( NULL ) );        
     }
 
 }
