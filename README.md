@@ -6,8 +6,12 @@ Nette addon for czech days and month names
 Installation
 ------------
 
- 1. Add the bundle to your dependencies:
+ 1. Add the plugin to your dependencies:
+ 
+	composer require venca-x/date-cz:~1.0
 
+	
+	////////////////////////////////////////////////////////
         // composer.json
 
         {
@@ -17,10 +21,6 @@ Installation
 			   "venca-x/date-cz": "@dev",
            }
         }
-
- 2. Use Composer to download and install the bundle:
-
-        composer update
 
 Configuration
 -------------
