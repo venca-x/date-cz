@@ -29,13 +29,24 @@ BasePresenter.php
 
 ```php
 
-protected function createTemplate( $class = NULL )
+protected function beforeRender()
 {
-    $template = parent::createTemplate( $class );
-    $template->registerHelper( 'monthNameCZ', callback( new \DateCZ(), 'getMonthName' ) );
-    $template->registerHelper( 'dayNameCZ', callback( new \DateCZ(), 'getDayName' ) );
-    $template->registerHelper( 'dayNameShortCZ', callback( new \DateCZ(), 'getShortDayName' ) );
-    return $template;
+    parent::beforeRender();
+
+    $this->template->addFilter('monthNameCZ', function ($text) {
+        $dateCZ = new \DateCZ();
+        return $dateCZ->getMonthName($text);
+    });
+    
+    $this->template->addFilter('dayNameCZ', function ($text) {
+        $dateCZ = new \DateCZ();
+        return $dateCZ->getDayName($text);
+    });
+    
+    $this->template->addFilter('dayNameShortCZ', function ($text) {
+        $dateCZ = new \DateCZ();
+        return $dateCZ->getShortDayName($text);
+    });
 }
 
 ```
