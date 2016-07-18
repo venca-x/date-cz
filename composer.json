@@ -1,18 +1,20 @@
 {
-    "name": "venca-x/date-cz",
-    "description": "Nette addon. Convert month number to name or day number to name (CZ)",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "vEnCa-X",
-            "email": "venca-x@seznam.cz"
-        }
-    ],
-    "minimum-stability": "dev",
-    "require-dev": {
-        "nette/tester": "@dev"
-    },
-    "autoload": {
-        "classmap": ["src/"]
+  "name": "venca-x/date-cz",
+  "description": "Nette addon. Convert month number to name or day number to name (CZ)",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "vEnCa-X",
+      "email": "venca-x@seznam.cz",
+      "homepage": "http://www.venca-x.cz"
     }
+  ],
+  "require-dev": {
+    "nette/tester": "~1.0"
+  },
+  "autoload": {
+    "classmap": [
+      "src/"
+    ]
+  }
 }
