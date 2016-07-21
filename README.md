@@ -1,5 +1,11 @@
-date-cz
+Date-cz
 ===============
+[![Build Status](https://travis-ci.org/venca-x/date-cz.svg)](https://travis-ci.org/venca-x/date-cz) 
+[![Latest Stable Version](https://poser.pugx.org/venca-x/date-cz/v/stable.svg)](https://packagist.org/packages/venca-x/date-cz) 
+[![Total Downloads](https://poser.pugx.org/venca-x/date-cz/downloads.svg)](https://packagist.org/packages/venca-x/date-cz) 
+[![Latest Unstable Version](https://poser.pugx.org/venca-x/date-cz/v/unstable.svg)](https://packagist.org/packages/venca-x/date-cz) 
+[![License](https://poser.pugx.org/venca-x/date-cz/license.svg)](https://packagist.org/packages/venca-x/date-cz)
+
 
 Nette addon for czech days and month names
 
