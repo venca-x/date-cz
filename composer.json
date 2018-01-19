@@ -9,8 +9,11 @@
       "homepage": "http://www.venca-x.cz"
     }
   ],
+  "require": {
+    "php": ">=7.1"
+  },
   "require-dev": {
-    "nette/tester": "~1.0"
+    "nette/tester": "~2.0"
   },
   "autoload": {
     "classmap": [
