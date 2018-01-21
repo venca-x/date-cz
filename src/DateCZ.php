@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace VencaX;
+
 /**
  * Transfer numbers month to month name
  * @author vEnCa-X <venca-x@seznam.cz>

@@ -37,22 +37,24 @@ Register filter for Nette/Layout. You do not have to use Nette/Layout, then call
 BasePresenter.php
 
 ```php
+use VencaX;
+//...
 protected function beforeRender()
 {
     parent::beforeRender();
 
     $this->template->addFilter('monthNameCZ', function ($dayNumber) {
-        $dateCZ = new \DateCZ();
+        $dateCZ = new VencaX\DateCZ();
         return $dateCZ->getMonthName($dayNumber);
     });
     
     $this->template->addFilter('dayNameCZ', function ($dayNumber) {
-        $dateCZ = new \DateCZ();
+        $dateCZ = new VencaX\DateCZ();
         return $dateCZ->getDayName($dayNumber);
     });
     
     $this->template->addFilter('dayNameShortCZ', function ($dayNumber) {
-        $dateCZ = new \DateCZ();
+        $dateCZ = new VencaX\DateCZ();
         return $dateCZ->getShortDayName($dayNumber);
     });
 }
@@ -81,7 +83,7 @@ Use in Nette/Layout:
 
 Use in PHP:
 ```php
-$dateCZ = new \DateCZ();
+$dateCZ = new VencaX\DateCZ();
 echo $dateCZ->monthNameCZ($dateTime->date->format('n')); //month name
 
 echo $dateCZ->dayNameCZ($dateTime->date->format('N')); //day name

@@ -9,7 +9,7 @@ require __DIR__ . '/../vendor/autoload.php';          // pri instalaci Composere
 // Nemusite pouzit, pokud preferujete vychozi vypis PHP.
 Tester\Environment::setup();
 
-$dateCZ = new DateCZ;
+$dateCZ = new VencaX\DateCZ;
 
 //months
 Assert::same('leden', $dateCZ->getMonthName(1));
