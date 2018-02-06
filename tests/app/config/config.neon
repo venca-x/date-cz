@@ -1,0 +1,6 @@
+application:
+	mapping:
+		*: VencaX\Components\DateCZ\Tests\App\*Presenter
+
+services:
+	routing.router: VencaX\Components\DateCZ\Tests\App\Router::createRouter

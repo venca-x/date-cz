@@ -1,4 +1,6 @@
-/vendor
-/composer.lock
 /.idea
 /node_modules
+/vendor
+/tests/temp
+/tests/tests/output
+/composer.lock

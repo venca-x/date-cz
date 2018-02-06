@@ -13,11 +13,16 @@
     "php": ">=7.1"
   },
   "require-dev": {
-    "nette/tester": "~2.0"
+    "nette/application": "^3.0",
+    "nette/bootstrap": "^3.0",
+    "latte/latte": "^3.0",
+    "nette/robot-loader": "^3.0",
+    "nette/tester": "^2.0"
   },
   "autoload": {
     "classmap": [
       "src/"
     ]
-  }
+  },
+  "minimum-stability": "dev"
 }

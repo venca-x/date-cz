@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
+
 use Tester\Assert;
 
-// Nacteme knihovny Testeru
-require __DIR__ . '/../vendor/autoload.php';          // pri instalaci Composerem
+require_once __DIR__ . '/../bootstrap.php';
 
 // Konfigurace prostredi velmi zprehledni vypisy chyb.
 // Nemusite pouzit, pokud preferujete vychozi vypis PHP.
