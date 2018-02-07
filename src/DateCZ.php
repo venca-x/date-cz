@@ -24,7 +24,7 @@ class DateCZ
 	 * @param int $numberMonth
 	 * @return string Name of month
 	 */
-	public function getMonthName($numberMonth = null)
+	public function getMonthName($numberMonth = null): ?string
 	{
 		return $this->getValueArray($numberMonth, $this->months);
 	}
@@ -35,7 +35,7 @@ class DateCZ
 	 * @param int $numberDay
 	 * @return string Name of day
 	 */
-	public function getDayName($numberDay = null)
+	public function getDayName($numberDay = null): ?string
 	{
 		return $this->getValueArray($numberDay, $this->days);
 	}
@@ -46,7 +46,7 @@ class DateCZ
 	 * @param int $numberDay
 	 * @return string Short name of day
 	 */
-	public function getShortDayName($numberDay = null)
+	public function getShortDayName($numberDay = null): ?string
 	{
 		return $this->getValueArray($numberDay, $this->shortDays);
 	}
@@ -54,7 +54,7 @@ class DateCZ
 
 	/**
 	 * Search index in array
-	 * @param int $index Index in array
+	 * @param int|null $index Index in array
 	 * @param array $array Array for search
 	 * @return null
 	 */
