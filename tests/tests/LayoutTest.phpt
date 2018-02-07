@@ -81,6 +81,7 @@ class LayoutTest extends Tester\TestCase
 		Tester\Assert::matchFile(__DIR__ . '/expected/days.phtml', $html);
 	}
 
+
 	/**
 	 * @return void
 	 */
@@ -96,6 +97,7 @@ class LayoutTest extends Tester\TestCase
 		Tester\Assert::matchFile(__DIR__ . '/expected/months.phtml', $html);
 	}
 
+
 	/**
 	 * @return void
 	 */
@@ -110,7 +112,6 @@ class LayoutTest extends Tester\TestCase
 		$html = (string) $response->getSource();
 		Tester\Assert::matchFile(__DIR__ . '/expected/shortDays.phtml', $html);
 	}
-
 }
 
 $testCase = new LayoutTest;
