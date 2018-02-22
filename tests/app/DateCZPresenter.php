@@ -31,18 +31,18 @@ final class DateCZPresenter extends Nette\Application\UI\Presenter
 
 	public function renderMonths()
 	{
-		$this->template->months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+		$this->template->months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 'x'];
 	}
 
 
 	public function renderDays()
 	{
-		$this->template->days = [1, 2, 3, 4, 5, 6, 7];
+		$this->template->days = [1, 2, 3, 4, 5, 6, 7, 'x'];
 	}
 
 
 	public function renderShortDays()
 	{
-		$this->template->shortDays = [1, 2, 3, 4, 5, 6, 7];
+		$this->template->shortDays = [1, 2, 3, 4, 5, 6, 7, 'x'];
 	}
 }
